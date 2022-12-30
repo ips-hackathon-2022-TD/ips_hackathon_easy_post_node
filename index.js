@@ -25,17 +25,17 @@ app.set("port", port);
 app.use(cors());
 
 //for CORS
-app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-  );
-  res.setHeader("Access-Control-Allow-Headers", "*");
-  req.header("Content-Type", "application/json");
-  res.setHeader("Access-Control-Allow-Credentials", true);
-  next();
-});
+// app.use(function (req, res, next) {
+//   res.setHeader("Access-Control-Allow-Origin", "*");
+//   res.setHeader(
+//     "Access-Control-Allow-Methods",
+//     "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+//   );
+//   res.setHeader("Access-Control-Allow-Headers", "*");
+//   req.header("Content-Type", "application/json");
+//   res.setHeader("Access-Control-Allow-Credentials", true);
+//   next();
+// });
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
