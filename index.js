@@ -11,8 +11,12 @@ require("dotenv").config();
 // Set up default mongoose connection
 const db = mongoose.connection;
 const port = process.env.PORT || "3002";
-// mongoose.set("strictQuery", false);
-// mongoose.connect("mongodb+srv://ipsAdmin:ips12345@cluster0.uvscf1s.mongodb.net/test", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.set("strictQuery", false);
+mongoose.connect("mongodb+srv://ipsAdmin:ips12345@cluster0.uvscf1s.mongodb.net/test").then ((_)=>{
+  console.log("MongoDB connected...");
+}).catch((e)=>{
+  console.log(e);
+})
 
 // Get the default connection
 
