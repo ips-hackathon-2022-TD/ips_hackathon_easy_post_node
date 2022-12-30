@@ -1,4 +1,4 @@
-const statusCode = require("../../config/statuscode");
+const statusCode = require("../../helpers/statuscode");
 const { responseData, responseMessage } = require("../../helpers/response");
 const Service = require("../../services");
 

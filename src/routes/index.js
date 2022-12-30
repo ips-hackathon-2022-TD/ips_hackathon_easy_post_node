@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const users = require("./users");
-const statusCode = require("../config/statuscode");
+const statusCode = require("../helpers/statuscode");
 const { responseData } = require("../helpers/response");
 
 router.get("/check", (req, res) => {

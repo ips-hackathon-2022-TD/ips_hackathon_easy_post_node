@@ -1,6 +1,6 @@
 const jsonwebtoken = require("jsonwebtoken");
 const UserData = require("../models/user");
-const statusCode = require("../config/statusCode");
+const statusCode = require("../helpers/statuscode");
 const { responseData, responseMessage } = require("../helpers/response");
 
 function verifyToken(req, res, next) {

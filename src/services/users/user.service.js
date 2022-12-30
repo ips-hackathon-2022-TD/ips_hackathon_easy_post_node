@@ -2,7 +2,7 @@ const User = require("../../models/user");
 const bcrypt = require("bcrypt");
 const jsonwebtoken = require("jsonwebtoken");
 const { responseMessage } = require("../../helpers/response");
-const statusCode = require("../../config/statuscode");
+const statusCode = require("../../helpers/statuscode");
 
 exports.register = async (req) => {
   let { firstName, lastName, email, password } = req.body;
